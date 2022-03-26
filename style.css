@@ -1,0 +1,221 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Outfit", sans-serif;
+}
+header {
+  text-align: center;
+  width: 100%;
+}
+nav {
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 64px;
+  background-color: #000;
+  z-index: 100;
+}
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+nav ul li {
+  display: inline-flex;
+  justify-items: center;
+  align-items: center;
+}
+nav ul li a {
+  color: #fafafa;
+  text-decoration: none;
+  font-size: 1rem;
+  text-transform: uppercase;
+  margin-right: 40px;
+  letter-spacing: 2px;
+  font-weight: 600;
+}
+nav .logo img {
+  width: 60px;
+  height: 64px;
+  margin-left: 40px;
+}
+nav ul li a:hover {
+  color: rgb(44, 44, 44);
+  text-shadow: 1px 5px 5px black;
+  transition: 0.6s ease-in-out;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+}
+.container .backTo {
+  width: 60%;
+  height: auto;
+}
+.container a {
+  text-decoration: none;
+}
+.container .card .img {
+  width: 100%;
+  height: auto;
+}
+.card {
+  width: 320px;
+  height: 400px;
+  background-color: #647e80;
+  border-radius: 1rem;
+  padding: 2rem;
+  overflow-y: hidden;
+}
+.card img {
+  position: absolute;
+  width: 300px;
+  filter: drop-shadow(5px 10px 15px rgba(8, 9, 13, 0.4));
+}
+.cardData {
+  transform: translateY(15.2rem);
+  text-align: center;
+}
+.cardTitle {
+  font-size: 1.25rem;
+  letter-spacing: 2px;
+  color: #fafafa;
+}
+.cardPrice {
+  color: #f6ce23;
+  font-weight: 600;
+  letter-spacing: 3px;
+}
+
+#page {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  background-color: #20202000;
+}
+.buyNow {
+  text-decoration: none;
+  color: #f6ce23;
+  font-weight: 600;
+  letter-spacing: 3px;
+}
+.video {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+#video {
+  border: 1px solid rgba(3, 4, 5, 0.4);
+  border-radius: 5%;
+  margin-left: 40px;
+}
+.description {
+  display: flex;
+  flex-direction: column;
+  margin-left: 40px;
+  max-width: 50%;
+  font-size: 1.125rem;
+  text-align: start;
+  justify-content: space-around;
+  margin-right: 40px;
+}
+#descriptionTittle {
+  letter-spacing: 3px;
+  color: #f6ce23;
+}
+.footerConteiner {
+  display: flex;
+  margin-top: 15%;
+  align-content: space-between;
+  justify-content: space-around;
+  margin-bottom: 20px;
+  background-color: #647e80;
+}
+.news {
+  position: relative;
+  display: block;
+  width: 50%;
+}
+.follow ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.follow ul li {
+  font-size: 1.5rem;
+  list-style: none;
+}
+.follow ul li a {
+  text-decoration: none;
+  animation-delay: 0.8s ease;
+}
+
+.follow ul li a i {
+  color: #fafafa;
+}
+
+#face:hover {
+  color: rgb(114, 114, 250);
+  transition: 0.6s ease;
+}
+#twitter:hover {
+  color: aqua;
+  transition: 0.6s ease;
+}
+#instagram:hover {
+  color: rgb(255, 175, 83);
+  transition: 0.6s ease;
+}
+.derechos {
+  display: flex;
+  justify-content: center;
+}
+.derechos p {
+  font-size: 1rem;
+}
+#submit {
+  height: 2.3rem;
+  font-size: 1.25rem;
+  border-radius: 0 8px 8px 0;
+  margin-left: -5px;
+  border: 2px solid 10px #fafafa;
+  background: rgb(255, 175, 83);
+  color: #000;
+}
+#email {
+  width: 60%;
+  margin-top: 40px;
+  height: 2rem;
+  font-size: 1.25rem;
+  border-radius: 8px 0 0 8px;
+}
+.card img:hover {
+  animation-duration: 3s;
+  animation-name: slidein;
+  animation-iteration-count: 3;
+  animation-direction: alternate;
+  overflow: visible;
+}
+
+@keyframes slidein {
+  from {
+    transform: translateY(0%);
+    
+  }
+
+  to {
+    transform: translateY(-50%);
+    top: 20px;
+  }
+}

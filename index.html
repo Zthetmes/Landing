@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/Freecodecamp/landignPage/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@200&family=Prompt:ital,wght@0,300;0,500;1,400;1,700&family=Questrial&family=Spartan:wght@100;500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <title>LandignPage</title>
+  </head>
+  <body>
+    <header id="header">
+      <nav id="nav-bar">
+        <div class="logo">
+          <img
+            id="header-img"
+            src="/Freecodecamp/landignPage/img/nike.png"
+            alt=""
+            width="50px"
+            height="50px"
+          />
+        </div>
+        <ul>
+          <li class="nav-link"><a href="#header">Home</a></li>
+          <li class="nav-link"><a href="#video">About</a></li>
+          <li class="nav-link"><a href="#header">Product</a></li>
+          <li class="nav-link"><a href="#footerConteiner">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section id="page">
+      <div class="container">
+        <div class="backTo">
+          <img
+            src="/Freecodecamp/landignPage/img/440px-Back_to_the_Future_film_series_logo.png"
+            alt=""
+          />
+        </div>
+        <div class="card">
+          <img src="/Freecodecamp/landignPage/img/imagen1.png" alt="" />
+          <div class="cardData">
+            <h3 class="cardTitle">Nike Back to the Future</h3>
+            <span class="cardPrice">u$s138</span>
+            <p class="cardDescription">Lorem ipsum dolor sit amet.</p>
+            <a class="buyNow" href="#">Buy Now</a>
+          </div>
+        </div>
+        <br /><br />
+      </div>
+
+      <div id="video" class="video">
+        <iframe
+          id="video"
+          width="500"
+          height="320"
+          src="https://www.youtube.com/embed/ki-c_xzXvGc"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+        <div class="description">
+          <h1 id="descriptionTittle">Description</h1>
+          <p id="descriptionInfo">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+            Perspiciatis vero inventore doloremque error repellat eius atque
+            beatae sunt. Officiis expedita, delectus eaque, architecto voluptas
+            itaque quo ea ipsa nihil ut autem ad fuga et, doloremque perferendis
+            at facilis sed ipsum aspernatur similique animi maiores rerum rem
+            ratione. Numquam, tempore! Iusto odit assumenda ut a facilis debitis
+            dolores minima? Esse, tempora.
+          </p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div id="footerConteiner"class="footerConteiner">
+        <div class="news">
+          <div class="newInfo">
+            <h1 class="newTittle">News</h1>
+            <p class="info">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas explicabo sint repellendus cupiditate minus blanditiis qui accusantium sequi culpa laborum, odio molestias architecto maiores minima a distinctio rem! Ratione, incidunt? Suscipit deleniti beatae incidunt sunt qui illo. Ratione, provident dicta.
+            </p>
+          </div>
+
+          <form
+            id="form"
+            action="https://www.freecodecamp.com/email-submit"
+            method="get"
+          >
+            <label for=""></label>
+            <input
+              id="email"
+              type="email"
+              name="email"
+              class="input"
+              placeholder="Email"
+              pattern="[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)@[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)[.][a-zA-Z]{1,5}"
+              required
+            />
+            <button type="submit" id="submit">Enviar</button>
+          </form>
+        </div>
+        <div class="socials">
+          <div class="follow">
+            <h1 id="follow">Follow Us</h1>
+            <ul>
+              <li>
+                <a href="#"
+                  ><i id="face" class="fab fa-facebook" aria-hidden="true"></i
+                ></a>
+              </li>
+              <li>
+                <a href="#"
+                  ><i id="twitter" class="fab fa-twitter" aria-hidden="true"></i
+                ></a>
+              </li>
+
+              <li>
+                <a href="#"
+                  ><i
+                    id="instagram"
+                    class="fab fa-instagram"
+                    aria-hidden="true"
+                  ></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+          <div class="Contact">
+            <h1>Contact</h1>
+            <p>T.E: +54-119-666-6666</p>
+            <p>Email : backtothefuture@nike.com</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="derechos">
+      <p>Todos los derechos reservados por Pakkun</p>
+    </div>
+  </body>
+</html>
